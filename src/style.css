@@ -185,7 +185,7 @@ body.container {
 
 /* social link profile styles */
 
-.sociallink__profile {
+.social__profile {
 
   background-color: var(--bg-main);
   border-radius: 10px;;
@@ -195,12 +195,12 @@ body.container {
 }
 
 @media( min-width:320px) {
-  .sociallink__profile {
+  .social__profile {
     padding-inline:1.75rem;  
   }
 }
 
-.sociallink__profile.grid-group {
+.social__profile.grid-group {
   gap:var(--size-400);
 }
 
@@ -237,19 +237,19 @@ body.container {
   font-size: var(--fs-100);
 }
 
-nav.sociallink-links ul.grid-group {
+.social-links__list.grid-group {
   gap:var(--size-300);
   justify-content: center;
 }
 
-nav.sociallink-links ul li {
+.social-links__item {
   display: block;
   
 }
 
 
 
-nav.sociallink-links ul a{
+.social-links__link{
   display: inline-block;  
   text-decoration: none;
   color:var(--clr-neutral-100);
