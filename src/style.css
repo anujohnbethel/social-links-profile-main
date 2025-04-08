@@ -88,7 +88,8 @@ picture {
   --fw-bold:700;
 
 
-  --fs-100:.71875rem;
+  --fs-100:.6875rem;
+  --fs-150:.71875rem;
   --fs-200:.75rem;
   --fs-300:.875rem;
   --fs-400:1rem;
@@ -108,6 +109,17 @@ picture {
 }
 
 /* utilility clasess */
+
+/* ie9+ */
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
 
 .grid-group {
   display: grid;
@@ -134,10 +146,10 @@ picture {
   padding:var(--size-200) var(--size-400);
   border-radius: 5px;
   max-width:100%;
-  transition: all .1s ease-in-out;
+  transition: background-color 0.3s ease, color 2s ease;
 }
 
-.button:hover {  
+.button[data-style="hover"]:hover {  
   background-color: var(--clr-primary-400);
   color:var(--clr-neutral-900);
 }
@@ -175,8 +187,6 @@ body.container {
 
 .sociallink__profile {
 
-  /* padding:var(--size-500); */
-
   background-color: var(--bg-main);
   border-radius: 10px;;
   padding-block: var(--size-400);
@@ -198,7 +208,6 @@ body.container {
 
 .profile.grid-group{
   justify-content:center;
-  /* align-items: center; */
   gap:var(--size-400);
 }
 
@@ -226,11 +235,6 @@ body.container {
   padding-top:var(--size-450);
   font-weight: var(--fw-light);
   font-size: var(--fs-100);
-}
-
-nav.sociallink-links ul {
-  list-style: none;
-  
 }
 
 nav.sociallink-links ul.grid-group {
