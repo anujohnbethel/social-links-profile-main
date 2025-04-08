@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github link](https://github.com/anujohnbethel/social-links-profile-main)
-- Live Site URL: [Add live site URL here](https://social-links-profile-main-anujohn.netlify.app/)
+- Solution URL: [https://github.com/anujohnbethel/social-links-profile-main](https://github.com/anujohnbethel/social-links-profile-main)
+- Live Site URL: [https://social-links-profile-main-anujohn.netlify.app/](https://social-links-profile-main-anujohn.netlify.app/)
 
 ## My process
 
