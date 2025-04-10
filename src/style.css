@@ -143,13 +143,14 @@ picture {
   font-size: var(--fs-200);
 
   background-color: var(--clr-neutral-700);
-  padding:var(--size-200) var(--size-400);
+  padding:var(--size-300) var(--size-400);
   border-radius: 5px;
   max-width:100%;
   transition: background-color 0.3s ease, color 2s ease;
 }
 
-.button[data-style="hover"]:hover {  
+.button[data-style="hover"]:hover
+,.button[data-style="hover"]:focus-visible {  
   background-color: var(--clr-primary-400);
   color:var(--clr-neutral-900);
 }
@@ -165,36 +166,37 @@ body {
 
   height: 100vh;
 
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
 
 }
 
 /* container styles */
 
-body.container {
+.container {
 
-  --max-width: 300px;
+  --max-width: 375px;
   --container-padding:1rem;
 
   width:min(var(--max-width),(100% - var(--container-padding)*2));
   margin-inline: auto;
-  
+   
+  /* margin-block:auto; */
 
 }
 
 /* social link profile styles */
 
 .social__profile {
-
+  
   background-color: var(--bg-main);
-  border-radius: 10px;;
-  padding-block: var(--size-400);
+  border-radius: 10px;
+  padding-block: var(--size-600);
   padding-inline:1.15rem;
 
 }
 
-@media( min-width:320px) {
+@media( min-width:375px) {
   .social__profile {
     padding-inline:1.75rem;  
   }
